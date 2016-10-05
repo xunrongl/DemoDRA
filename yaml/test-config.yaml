@@ -1,0 +1,8 @@
+test:
+  credentialsId: BM_LOGIN
+  orgName: lix@us.ibm.com
+  applicationName: Test-YAML
+  environmentName: Test
+  buildJobName: test-build
+  type: unittest
+  resultfile: mochatest.json
