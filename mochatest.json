@@ -2,73 +2,177 @@
   "stats": {
     "suites": 1,
     "tests": 4,
-    "passes": 4,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2016-06-30T16:26:31.854Z",
-    "end": "2016-06-30T16:26:32.472Z",
-    "duration": 618
+    "failures": 4,
+    "start": "2017-01-05T21:37:56.445Z",
+    "end": "2017-01-05T21:37:57.086Z",
+    "duration": 641
   },
   "tests": [
     {
       "title": "with valid zip code",
       "fullTitle": "Get Weather with valid zip code",
-      "duration": 267,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 200 to equal 2000",
+        "showDiff": false,
+        "actual": 200,
+        "expected": 2000,
+        "stack": "AssertionError: expected 200 to equal 2000\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:23:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     },
     {
       "title": "with without zip code",
       "fullTitle": "Get Weather with without zip code",
-      "duration": 5,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 400 to equal 4000",
+        "showDiff": false,
+        "actual": 400,
+        "expected": 4000,
+        "stack": "AssertionError: expected 400 to equal 4000\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:32:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     },
     {
       "title": "with invalid zip code",
       "fullTitle": "Get Weather with invalid zip code",
-      "duration": 167,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 200 to equal 400",
+        "showDiff": false,
+        "actual": 200,
+        "expected": 400,
+        "stack": "AssertionError: expected 200 to equal 400\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:40:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     },
     {
       "title": "with incomplete zip code",
       "fullTitle": "Get Weather with incomplete zip code",
-      "duration": 175,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 200 to equal 400",
+        "showDiff": false,
+        "actual": 200,
+        "expected": 400,
+        "stack": "AssertionError: expected 200 to equal 400\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:48:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     }
   ],
   "pending": [],
-  "failures": [],
-  "passes": [
+  "failures": [
     {
       "title": "with valid zip code",
       "fullTitle": "Get Weather with valid zip code",
-      "duration": 267,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 200 to equal 2000",
+        "showDiff": false,
+        "actual": 200,
+        "expected": 2000,
+        "stack": "AssertionError: expected 200 to equal 2000\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:23:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     },
     {
       "title": "with without zip code",
       "fullTitle": "Get Weather with without zip code",
-      "duration": 5,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 400 to equal 4000",
+        "showDiff": false,
+        "actual": 400,
+        "expected": 4000,
+        "stack": "AssertionError: expected 400 to equal 4000\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:32:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     },
     {
       "title": "with invalid zip code",
       "fullTitle": "Get Weather with invalid zip code",
-      "duration": 167,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 200 to equal 400",
+        "showDiff": false,
+        "actual": 200,
+        "expected": 400,
+        "stack": "AssertionError: expected 200 to equal 400\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:40:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     },
     {
       "title": "with incomplete zip code",
       "fullTitle": "Get Weather with incomplete zip code",
-      "duration": 175,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 200 to equal 400",
+        "showDiff": false,
+        "actual": 200,
+        "expected": 400,
+        "stack": "AssertionError: expected 200 to equal 400\n  at Test.<anonymous> (tests/server/apiv1.spec.js.fail:48:28)\n  at Test.assert (node_modules/supertest/lib/test.js:156:6)\n  at Server.assert (node_modules/supertest/lib/test.js:127:12)\n  at emitCloseNT (net.js:1523:8)\n",
+        "domain": {
+          "domain": null,
+          "_events": {},
+          "_eventsCount": 1,
+          "members": []
+        },
+        "domainThrown": true,
+        "uncaught": true
+      }
     }
-  ]
+  ],
+  "passes": []
 }

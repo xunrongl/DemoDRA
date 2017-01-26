@@ -27,7 +27,7 @@ module.exports = function (grunt) {
                  quite: true,
                  captureFile: 'mochatest.json'
         		  },
-        		  src: ['tests/server/*.js']
+        		  src: ['tests/server/*.js.fail']
       		},
           'server-side-spec': {
               options: {
@@ -162,7 +162,7 @@ module.exports = function (grunt) {
               }
           }
       },
-	  
+
 	  simplemocha: {
             sauce: {
                 options: {
@@ -172,7 +172,7 @@ module.exports = function (grunt) {
                 src: ['tests/sauce/**/*-specs.js']
             }
         },
-        
+
         karma: {
             options: {
                 // point all tasks to karma config file
